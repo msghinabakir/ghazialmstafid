@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title> Almstafid store </title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body >
+   
+        <!-- header -->
+      <div class="header">
+        <img class="logo" src="images/logo.png"  /> 
+        <div class="header-links">
+<a href="#"  id="homeBtn">Home</a>
+<a href="#store">Our Shop</a>
+<a href="#" id="openContact">Contact</a>
+
+<button  id="signBtn"   
+class="btn-button">Sign in</button >
+        </div>
+    </div>
+    <!-- landing page -->
+     <div class="landing-page">
+        <div class="landing-page-left-section">
+<span>اهلا وسهلا بكم</span>
+<h1>
+نقدّم لك<br>
+<span class="highlight">منصة متكاملة</span><br>
+لكل احتياجاتك التقنية
+</h1>
+<p class="hero-desc">
+نقدّم لك:
+</p>
+
+<ul class="hero-list">
+  <li>🛒 متجر تقني متكامل</li>
+  <li>💼 برامج محاسبة احترافية</li>
+  <li>📸 تنفيذ مشاريع حقيقية</li>
+  <li>🎓 دورات تعليمية</li>
+  <li>📞 دعم وتواصل مباشر</li>
+</ul>
+
+<div class="landing-page-Search">
+    <input placeholder="start typing ..." />
+    <button class="btn">Search</button>
+</div>
+
+          <div class="hero-buttons">
+  <button id="shopBtn" class="btn-main">تصفح المتجر</button>
+<button class="btn-outline" id="servicesBtn">خدماتنا</button>
+</div>
+ </div>
+
+        <div class="landing-page-images-container">
+            <img src="images/صورة الشركة.jpg" />
+        </div>
+     </div>
+
+  
+
+
+     <!-- salse store-->
+<div id="shopSection" class="salse-container">
+        <span>almstafid</span>
+        <div class="salse-header">
+            <h1>Almstafid store</h1>
+            <button class="btn-button" >View All  </button>
+      </div>
+      <div class="salse-cards"> 
+
+             <!-- صورة الاولة-->
+  <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+           "desc":"كيبورد وماوس عادي"
+         }
+       ]'
+  />
+
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+  <!-- صورة 2-->
+   <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+           "desc":"كيبورد وماوس عادي"
+         }
+       ]'
+  />
+
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+  <!-- صورة 3-->
+<div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 4-->
+  <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 5-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 6-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 7-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 8-->
+  <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 9-->
+  <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 10-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 11-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+ <!-- صورة 12-->
+ <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+
+
+ </div>
+</div>
+           <!-- salse Hardware -->
+       
+<div class="section-light">
+ <div id="hardware" class="salse-container">
+    <span>almstafid</span>
+
+    <div class="salse-header">
+      <h1>Almstafid Hardware</h1>
+      <button class="btn-button">View All</button>
+    </div>
+
+    <!-- 🔥 Container واحد بس -->
+    <div class="salse-cards">
+
+      <!-- كرت 1 -->
+     <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+      <!-- كرت 2 -->
+     <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+      <!-- كرت 3 -->
+     <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+
+      <!-- كرت 4 -->
+     <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+      <!-- كرت 5 -->
+     <div class="card">
+  <img class="thumb_buy"
+       src="images/قياس الصحيح.png"
+       onclick="openFullModal(this)"
+       data-product='[
+         {
+           "img":"images/لابتوب.jpg",
+           "title":"Gaming Set",
+           "price":"$400",
+            "desc":"يارب وفقني لما تحب وترضا"
+       },
+         {
+           "img":"images/لابتوب2.jpg",
+           "title":"Office Set",
+           "price":"$200",
+            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag         aptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag"
+         }
+       ]'
+  />
+  <div class="card-info-buy">
+    <div class="card-name">
+      <p>Almstafid</p>
+      <h3>Almstafid Programming</h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+     <!-- connect 
+      هيدا القديم تبع الايميل والاسم
+<div class="modal" id="contactModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Contact Us</h1>
+    
+    <form id="contactForm">
+      <div class="input-group">
+    <img src="images/icon_person.png" alt="icon" class="icon"/>
+        <input type="text" id="name" placeholder="Your Name" required/>
+      </div>
+
+      <div class="input-group">
+        <i class="fa-regular fa-envelope"></i>
+         <img src="images/icon_gmail.png" alt="icon" class="icon"/>
+        <input type="email" id="email" placeholder="Your Email" required/>
+      </div>
+
+      <div class="input-group align-start">
+        <i class="fa-solid fa-pen"></i>
+               <img src="images/icon_alm.png" alt="icon" class="icon"/>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">
+         <img src="images/icon_plane .png" width="20px" alt="icon" class="icon"/>
+        <i class="fa-solid fa-paper-plane"></i> Send
+      </button>
+
+    </form>
+    <p id="responseMsg"></p>
+  </div>
+</div>
+-->
+
+
+<!-- لوحة الاتصال الجديد -->
+<div class="contact-modal">
+
+  <div class="contact-content">
+    <span class="close-btn">&times;</span>
+
+    <h2>Contact Us</h2>
+
+    <div class="social-links">
+
+     <a href="https://wa.me/96181390018" target="_blank" class="whatsapp">
+<img src="images/whatsapp_logo_icon_.png" width="30px" class="icon">
+  <span>WhatsApp 1</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://wa.me/96171918022" target="_blank" class="whatsapp">
+<img src="images/whatsapp_logo_icon_.png" width="30px" class="icon">
+  <span>WhatsApp 2</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://www.facebook.com/share/1LB7mhY8xF/" target="_blank" class="facebook">
+<img src="images/facebook_logo_icon_.png" width="30px" class="icon">
+  <span>Facebook</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://m.me/Almstafid" target="_blank" class="messenger">
+<img src="images/messenger_message.png" width="30px" class="icon">
+  <span>Messenger</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://www.instagram.com/almstafid?igsh=MXZpeWZmOGVyaHB6ZQ==" target="_blank" class="instagram">
+<img src="images/instagram.png" width="30px" class="icon">
+  <span>Instagram</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://www.tiktok.com/@almstafidprograms?_r=1&_t=ZS-95xyKgwCFaU" target="_blank" class="tiktok">
+<img src="images/tiktok_logo_icon.png" width="30px" class="icon">
+  <span>TikTok</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+<a href="https://youtube.com/@almstafidbusiness?si=ZcnnO6UM1_Op4yVx" target="_blank" class="youtube">
+<img src="images/youtube.png" width="30px" class="icon">
+  <span>YouTube</span>
+  <i class="arrow">&gt;</i>
+</a>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- نافذة Sign in -->
+
+<div id="signModall" class="button-modal">
+  <div class="button-modal-content">
+
+    <!-- زر الإغلاق -->
+    <span id="closeSign_button">&times;</span>
+    <h2>Sign In</h2>
+    
+<form id="loginForm">
+
+
+  <div class="input-group">
+  <i class="fa-regular fa-envelope icon"></i>
+<input type="email" id="email" placeholder="Your Email">
+</div>
+     
+  <div class="password-box">
+  <input type="password" id="password" placeholder="Enter Password">
+  <span id="togglePassword">👁️</span>
+</div>
+
+    <button class="button-login-btn"> Login </button>
+
+</form>
+  </div>
+</div>
+
+<!-- صور لي بقلب الكارد -->
+<div id="fullModal" class="full-modal">
+
+ <span class="close-full" onclick="closeFullModal()">&times;</span>
+
+  <div class="full-content">
+
+    <!-- الصور -->
+    <div class="left-side">
+      <img id="mainImage" class="main-img">
+
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+
+    <!-- التفاصيل -->
+    <div class="right-side">
+      <h2 id="productTitle"></h2>
+
+      <p class="price" id="productPrice"></p>
+
+      <p class="desc" id="productDesc"></p>
+
+      <a id="whatsappBtn" target="_blank" class="whatsapp-btn">
+        تواصل واتساب
+      </a>
+  </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- خدماتنا Modal -->
+<div id="servicesModal" class="full-modal">
+
+  <span class="close-full" onclick="closeServicesModal()">&times;</span>
+
+  <div class="full-content">
+
+
+<div class="services">
+  <h1>خدماتنا</h1>
+  <p class="services-desc">
+    نحن نقدم مجموعة متكاملة من الخدمات التقنية:
+  </p>
+
+  <!-- خدمة 1 -->
+  <div class="service-item">
+    <div class="text">
+      <h2>تصميم وبرمجة مواقع الالكترونية</h2>
+      <p>
+        نقوم بتصميم وتطوير مواقع احترافية متجاوبة مع جميع الاجهزة
+        بسرعة عالية وتجربة مستخدم ممتازة تناسب نشاطك التجاري.
+      </p>
+    </div>
+<a href="#store">
+<img src="images/4.jpg" onclick="goToSection('hardware')">
+</a>
+  </div>
+
+  <!-- خدمة 2 -->
+  <div class="service-item">
+    <div class="text">
+      <h2>تطوير تطبيقات الموبايل</h2>
+      <p>
+        نقوم بتطوير تطبيقات حديثة لأندرويد و iOS
+        بأداء سريع وتصميم عصري يساعدك توصل لعملائك بسهولة.
+      </p>
+    </div>
+    <img src="images/ghazi10.jpg" onclick="goToSection('store')">
+  </div>
+
+  <!-- خدمة 3 -->
+  <div class="service-item">
+    <div class="text">
+      <h2>إنشاء متاجر إلكترونية</h2>
+      <p>
+        نبني متاجر متكاملة مع أنظمة دفع وإدارة منتجات،
+        لتبدأ البيع أونلاين بسهولة واحتراف.
+      </p>
+    </div>
+    <img src="images/ghazi10.jpg" onclick="goToSection('store')">
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+<!--================= Programming Education  ====================================-->
+
+<div class="section-light">
+  <div id="learning" class="salse-container">
+      <span>almstafid</span>
+    <div class="salse-header">
+            <h1>Programming Education</h1>
+        <button class="btn-button">View All</button>
+    </div>
+   
+    <div class="salse-cards">
+
+      <!-- كارد 1 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+            {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+               {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>HTML Course</h3>
+        </div>
+      </div>
+
+      <!-- كارد 2 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+           {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+               {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>CSS Course</h3>
+        </div>
+      </div>
+ <!-- كارد 3 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+            {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+             {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+               {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>HTML Course</h3>
+        </div>
+      </div>
+ <!-- كارد 4 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+            {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+             {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+               {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+             {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+               {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"},
+              {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>HTML Course</h3>
+        </div>
+      </div>
+ <!-- كارد 5 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+            {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>HTML Course</h3>
+        </div>
+      </div>
+ <!-- كارد 6 -->
+      <div class="card">
+        <img class="thumb_buy"
+          src="images/internet.jpeg"
+          onclick="openCourseModal(this)"
+          data-course='[
+            {"img":"images/internet.jpeg","title":"HTML Basics","desc":"تعلم أساسيات HTML","video":"https://youtu.be/ZMizpQS7FbY"},
+            {"img":"images/internet.jpeg","title":"HTML Forms","desc":"شرح الفورمز","video":"https://youtu.be/ZMizpQS7FbY"}
+          ]'
+        />
+
+        <div class="card-info-buy">
+          <h3>HTML Course</h3>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!--================= Course Modal =================-->
+<div id="courseModal" class="course-modal">
+
+  <span class="close-full" onclick="closeCourseModal()">×</span>
+
+  <div class="course-content">
+
+    <h2 id="courseTitle">Course</h2>
+
+    <div id="courseList"></div>
+
+  </div>
+</div>
+
+<!--============================================================================== -->
+
+
+
+
+     <script src="Script.js"></script>
+   </body>
+
