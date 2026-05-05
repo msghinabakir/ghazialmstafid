@@ -123,12 +123,13 @@ function openFullModal(el) {
     img.onclick = () => {
       mainImage.src = item.img;
 
-      document.getElementById("productTitle").innerText = item.title;
-      document.getElementById("productDesc").innerText = item.desc;
+      document.getElementById("productTitle").innerHTML =
+  item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
+     document.getElementById("productDesc").innerHTML = item.desc;
       document.getElementById("productPrice").innerText = item.price;
 
       document.getElementById("whatsappBtn").href =
-        "https://wa.me/96171918022?text=مرحبا بدي استفسر عن " + item.title;
+        "https://wa.me/96181390018?text=مرحبا بدي استفسر عن " + item.title;
     };
 
     thumbsContainer.appendChild(img);
@@ -137,12 +138,13 @@ function openFullModal(el) {
     if (index === 0) {
       mainImage.src = item.img;
 
-      document.getElementById("productTitle").innerText = item.title;
-      document.getElementById("productDesc").innerText = item.desc;
+document.getElementById("productTitle").innerHTML =
+  item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
+       document.getElementById("productDesc").innerHTML = item.desc;
       document.getElementById("productPrice").innerText = item.price;
 
       document.getElementById("whatsappBtn").href =
-        "https://wa.me/96171918022?text=مرحبا بدي استفسر عن " + item.title;
+        "https://wa.me/96181390018?text=مرحبا بدي استفسر عن " + item.title;
     }
   });
 }

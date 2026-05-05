@@ -3,7 +3,7 @@
 }
 body {
   font-family: 'Tajawal', sans-serif;
-  background: #f30303;
+  background: #f8fafc;
   color: #222;
   margin: 0;
 }
@@ -77,7 +77,7 @@ h1 {
 }
 
 .highlight {
-  color: #ff6a00;
+  color:  #2e6af7;
   font-weight: 800;
   font-size: 42px; /* أكبر شوي لتبرز */
   display: inline-block;
@@ -92,7 +92,7 @@ h1 {
 }
 
 .btn-main {
-  background: #ff6a00;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
   padding: 12px 25px;
   border: none;
@@ -125,8 +125,8 @@ h1 {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #ff6a00;
-  color: #ff6a00;
+  border: 2px solid #3B6FEA;
+  color: linear-gradient(to right, #4F8DFD, #3B6FEA);
   padding: 12px 25px;
   border-radius: 30px;
   font-weight: 600;
@@ -134,7 +134,7 @@ h1 {
 }
 
 .btn-outline:hover {
-  background: #ff6a00;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
 }
 .landing-page-left-section {
@@ -242,7 +242,7 @@ background: linear-gradient(135deg, #ffffff, #eef3f9);
 }
 
 .landing-page-Search button {
-  background: #ff6a00;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -252,7 +252,7 @@ background: linear-gradient(135deg, #ffffff, #eef3f9);
 }
 
 .landing-page-Search button:hover {
-  background: #e65c00;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
 }
 
 /*==========================================*/
@@ -264,18 +264,19 @@ background: linear-gradient(135deg, #ffffff, #eef3f9);
 width: 50px;
 }
 .btn {
- background: #ff6a00;
+ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
 border-radius: 15px;
  padding: 5px 15px;
 
 border: none;
 }
+
 .btn:hover{
-    background-color:#e65c00 ;
+    background-color:linear-gradient(to right, #4F8DFD, #3B6FEA) ;
    }
 .btn-button{
- background: #ff6a00;
+ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
     border-radius: 15px;
  padding: 10px 18px;
@@ -292,7 +293,10 @@ border-radius: 15px;
 }
 
 .header-links a:hover {
-  color: #ff6a00;
+ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+-webkit-text-fill-color: transparent;
   background: transparent;
 }
 
@@ -311,7 +315,10 @@ border-radius: 15px;
    padding: 40px 20px; 
 }
 .salse-container span{
-    color: #ff6a00;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+-webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -390,7 +397,7 @@ transform: translateY(-8px) ;
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
-   background: #ff6a00;
+   background:linear-gradient(to right, #4F8DFD, #3B6FEA);
     color: white;
   border-radius: 50px;
  align-self: center;
@@ -401,18 +408,17 @@ transform: translateY(-8px) ;
   transition: 0.3s;
 }
 .buy-btn:hover {
-  background: #e65c00;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(225,106,0,0.4);
 }
 
 .thumb_buy {
   width: 100%;
-  height: 220px; /* كبرناها شوي */
-  object-fit: cover; /* 🔥 أهم شي */
-  border-radius: 20px 20px 0 0; /* نفس الكارد */
+  height: 180px;        /* 🔥 حجم ثابت */
+  object-fit: cover;    /* يقص بشكل مرتب */
+  border-radius: 20px 20px 0 0;
   display: block;
-   background: #fff;
 }
 
 .card-info-buy {
@@ -461,14 +467,32 @@ transform: translateY(-8px) ;
 .left-side {
   width: 60%;
 }
-
+.sub-title {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
 .main-img {
   width: 100%;
   height: 400px;
   object-fit: contain;
   border-radius: 15px;
-}
+background: radial-gradient(circle at center, #e2e8f0, #f8fafc);
 
+padding: 30px;
+
+box-shadow: 
+  inset 0 0 40px rgba(0,0,0,0.1),
+  0 0 30px rgba(59, 111, 234, 0.15);
+
+filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2)) brightness(1) contrast(1);
+
+transition: 0.4s;
+}
+.main-img:hover {
+  transform: scale(1.03);
+}
 .thumbs {
   display: flex;
   gap: 10px;
@@ -482,17 +506,43 @@ transform: translateY(-8px) ;
   cursor: pointer;
   border-radius: 10px;
 }
+.card:hover .price-acc {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 /*جهة اليمين*/
 .right-side {
   width: 40%;
 }
-
-.price {
-  color: #ff6a00;
-  font-size: 24px;
-  margin: 10px 0;
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
+/* السعر */
+.price-acc {
+  font-size: 26px !important;
+  font-weight: 700;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+
+-webkit-text-fill-color: transparent;
+}
+
+/* البادج */
+.badge {
+  background: linear-gradient(to right, #ff7a18, #ffb347);
+  color: white;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
 .desc {
   color: #555;
 }
@@ -524,10 +574,14 @@ flex-direction: column;
   font-size: 16px;
 }
 .product-info .price {
-  color: #ff6a00;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+-webkit-text-fill-color: transparent;
   font-size: 20px;
   font-weight: bold;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -719,7 +773,10 @@ backdrop-filter: blur(5px);
     padding: 35px;
     border-radius: 22px;
 background: #fffaf5;
-color: #ff6a00;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+-webkit-text-fill-color: transparent;
     position: relative;
     animation: popupFade 0.3s ease;
 }
@@ -769,17 +826,20 @@ color: #ff6a00;
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #ff6a00;
+background: linear-gradient(to right, #4F8DFD, #3B6FEA);
+-webkit-background-clip: text;
+background-clip: text; /* 🔥 أضف هيدا */
+-webkit-text-fill-color: transparent;
   pointer-events: none;
 }
 .input-group input:focus + img {
   opacity: 1;
 }
 .input-group input:focus + .icon {
-  color: #e65c00;
+  color: linear-gradient(to right, #4F8DFD, #3B6FEA);
 }
 .input-group input:focus {
-  border-color: #ff6a00;
+  border-color:linear-gradient(to right, #4F8DFD, #3B6FEA);
   box-shadow: 0 0 10px rgba(255,106,0,0.2);
 }
 .input-group textarea {
@@ -841,14 +901,14 @@ color: #ff6a00;
   font-size: 15px;
   font-weight: 600;
   color: white;
- background: linear-gradient(135deg, #ff6a00, #ff8c42);
+ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   cursor: pointer;
   transition: 0.3s;
   width: 100%;
 }
 .button-login-btn:hover {
   transform: scale(1.05);
-  background: #e65c00;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
 }
 /*==============================================================*/
 
@@ -953,7 +1013,7 @@ backdrop-filter: blur(5px);
 /* الصندوق*/
 .contact-content {
 background: #fffaf5;
-color: #ff6a00;
+color: linear-gradient(to right, #4F8DFD, #3B6FEA);
   padding: 30px;
   border-radius: 20px;
   width: 90%;
@@ -1089,7 +1149,9 @@ color: #ff6a00;
   .landing-page {
     flex-direction: column;
   }
-
+  .salse-cards {
+    grid-template-columns: 1fr !important;
+  }
   .card {
     width: 100%;
   }
@@ -1098,7 +1160,9 @@ color: #ff6a00;
     padding: 10px 20px;
   }
 }
-
+  .thumb_buy {
+    height: 200px;
+  }
 .hidden {
   display: none;
 }
@@ -1172,7 +1236,7 @@ color: #ff6a00;
   width: 35px;
   height: 35px;
   background: #fffaf5;
-  color: #ff6a00;
+  color: linear-gradient(to right, #4F8DFD, #3B6FEA);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1185,7 +1249,7 @@ color: #ff6a00;
 }
 .close-full:hover {
   transform: rotate(90deg) scale(1.1);
-  color: #e65c00;
+  color: linear-gradient(to right, #4F8DFD, #3B6FEA);
 }
 /*===================================================================*/
 
@@ -1265,7 +1329,7 @@ body.modal-open {
   cursor: pointer;
   opacity: 0.8;
   transition: 0.3s;
-  color: #ff7a18;
+  color:linear-gradient(to right, #4F8DFD, #3B6FEA);
   background: none !important;
   border: none;
   padding: 0;
@@ -1292,9 +1356,12 @@ body.modal-open {
   width: 120px;
   border-radius: 10px;
 }
-
 /* 🔥 تحسين الموبايل */
 @media (max-width: 768px) {
+
+  .thumb_buy {
+    height: 160px;   /* أصغر على الموبايل */
+  }
 
   .landing-page {
     flex-direction: column;
@@ -1334,8 +1401,6 @@ body.modal-open {
   }
 
 }
-
-
 @media (max-width: 768px) {
 
   .salse-cards {
@@ -1346,7 +1411,152 @@ body.modal-open {
 
   .card {
     width: 100% !important;
+   overflow: hidden !important;
   }
 
+  .modal-content img {
+       width: 90%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+  .modal-details {
+    width: 100%;
+    padding: 10px;
+  }
+.modal-details h2 {
+    font-size: 22px;
+  }
+
+  .modal-details p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .modal-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .modal-thumbnails img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+  /* كل سيكشن فيه صورة + نص */
+  .services,
+  .service,
+  .about,
+  .content,
+  .box {
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* الصور */
+  .services img,
+  .service img,
+  .about img,
+  .content img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  /* النص */
+  .services p,
+  .service p,
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .full-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .main-img {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto 15px;
+    display: block;
+     height: auto; /* 🔥 يمنع التخريب */
+  }
+
+ .thumbs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* 🔥 مهم */
+  gap: 10px;
 }
 
+  .right-side {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right-side h2 {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  .whatsapp-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+       flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+        flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-links a {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .sign-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  
+  }
