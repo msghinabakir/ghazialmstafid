@@ -551,7 +551,7 @@ background-clip: text; /* 🔥 أضف هيدا */
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: #25D366;
+  background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
   border-radius: 10px;
   text-decoration: none;
