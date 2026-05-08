@@ -1431,12 +1431,12 @@ body.modal-open {
   }
 
   .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    overflow-x: auto;
+   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  overflow-x: auto;
   }
 
   .logo {
@@ -1461,6 +1461,7 @@ body.modal-open {
     white-space: nowrap;
     flex-shrink: 0;
   }
+
   .landing-page {
     flex-direction: column;
     text-align: center;
