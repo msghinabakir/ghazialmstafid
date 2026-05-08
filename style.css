@@ -29,10 +29,10 @@ h1, h2, h3 {
 /*==========================================*/
 /*نص لي بالhome*/
 .hero-desc {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: 10px;
-  color: #666;
+  color: #777;
 }
 
 .hero-list {
@@ -81,7 +81,7 @@ h1 {
 .highlight {
   color:  #2e6af7;
   font-weight: 800;
-  font-size: 44px; /* أكبر شوي لتبرز */
+  font-size: 32px; /* أكبر شوي لتبرز */
   display: inline-block;
   margin: 8px 0;
 }
@@ -228,8 +228,8 @@ overflow: hidden;
   filter: blur(40px);
 }
 .landing-page h1 {
-  font-size: 42px;
-  line-height: 1.4;
+  font-size: 28px;
+  line-height: 1.6;
   font-weight: 800;
   color: #111827;
 }
