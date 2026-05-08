@@ -79,7 +79,7 @@ h1 {
 .highlight {
   color:  #2e6af7;
   font-weight: 800;
-  font-size: 42px; /* أكبر شوي لتبرز */
+  font-size: 34px; /* أكبر شوي لتبرز */
   display: inline-block;
   margin: 8px 0;
 }
@@ -1556,4 +1556,15 @@ body.modal-open {
     max-width: 250px;
   }
 
+}
+/* مهم جداً */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* يمنع أي عنصر يطلع برا الشاشة */
+* {
+  min-width: 0;
 }
