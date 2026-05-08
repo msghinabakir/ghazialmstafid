@@ -32,59 +32,66 @@ closeContact.addEventListener("click", () => {
 });
 */
 
-
-
 /* ================= SIGN IN ================= */
 
+const signBtn = document.getElementById("signBtn");
 const signModal = document.getElementById("signModall");
 const closeSign = document.getElementById("closeSign_button");
-if (signBtn){
-  signBtn.addEventListener("click",(e) =>{
+
+if (signBtn) {
+  signBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    signModal.style.display  = "flex";
+
+    signModal.style.display = "flex";
     document.body.style.overflow = "hidden";
   });
 }
-signBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-  signModal.style.display = "flex";
-  document.body.style.overflow = "hidden";
-});
 
-closeSign.addEventListener("click", () => {
-  signModal.style.display = "none";
-  document.body.style.overflow = "auto";
-});
+if (closeSign) {
+  closeSign.addEventListener("click", () => {
+    signModal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+}
+
+/* ===== اظهار كلمة السر ===== */
 
 const password = document.getElementById("password");
 const toggle = document.getElementById("togglePassword");
 
-toggle.addEventListener("click", () => {
-  if (password.type === "password") {
-    password.type = "text";
-    toggle.textContent = "🙈";
-  } else {
-    password.type = "password";
-    toggle.textContent = "👁️";
-  }
-});
+if (toggle) {
+  toggle.addEventListener("click", () => {
 
-//      login     
+    if (password.type === "password") {
+      password.type = "text";
+      toggle.textContent = "🙈";
+    } else {
+      password.type = "password";
+      toggle.textContent = "👁️";
+    }
+
+  });
+}
+
+/* ===== login ===== */
+
 document.getElementById("loginForm").addEventListener("submit", function(e) {
+
   e.preventDefault();
 
   const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
+  const passwordValue = document.getElementById("password").value.trim();
 
   console.log("Email:", email);
-  console.log("Password:", password);
+  console.log("Password:", passwordValue);
 
-  if (!email || !password) {
+  if (!email || !passwordValue) {
     alert("Please fill all fields");
     return;
   }
 
   alert("Login successful ✅");
+
 });
 /* ================= CONTACT2 ================= */
 const openBtn = document.getElementById("openContact");
@@ -105,6 +112,20 @@ window.onclick = function(e) {
   }
 }
 
+
+/*=====================    عروضات     ===========================*/
+document.getElementById("offersBtn").addEventListener("click", function () {
+  document.getElementById("shopSection").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+/*=====================    اكسسورات     ===========================*/
+document.getElementById("hardwareBtn").addEventListener("click", function () {
+  document.getElementById("hardware").scrollIntoView({
+    behavior: "smooth"
+  });
+});
 /*=====================    modal     ===========================*/
 function openFullModal(el) {
   document.getElementById("fullModal").style.display = "block";
@@ -244,9 +265,40 @@ function closeCourseModal() {
   document.getElementById("courseModal").style.display = "none";
 }
 
-/*===================تصفح المتجر=================================*/
-document.getElementById("shopBtn").addEventListener("click", function() {
-  document.getElementById("shopSection").scrollIntoView({
-    behavior: "smooth"
-  });
+/*=================== sections-modal=================================*/
+const galleryModal = document.getElementById("galleryModal");
+
+const openGallery = document.getElementById("openGallery");
+
+const closeGallery = document.querySelector(".gallery-close");
+
+/* فتح */
+openGallery.addEventListener("click", () => {
+
+  galleryModal.style.display = "block";
+
+  document.body.classList.add("modal-open");
+
+});
+
+/* إغلاق */
+closeGallery.addEventListener("click", () => {
+
+  galleryModal.style.display = "none";
+
+  document.body.classList.remove("modal-open");
+
+});
+
+/* إغلاق عند الضغط برا */
+window.addEventListener("click", (e) => {
+
+  if(e.target === galleryModal){
+
+    galleryModal.style.display = "none";
+
+    document.body.classList.remove("modal-open");
+
+  }
+
 });

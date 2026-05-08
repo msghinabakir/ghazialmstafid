@@ -20,9 +20,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         <img class="logo" src="images/logo.png"  /> 
         <div class="header-links">
 <a href="#"  id="homeBtn">Home</a>
-<a href="#store">Our Shop</a>
+<a href="#hardware">Our Shop</a>
 <a href="#" id="openContact">Contact</a>
-
+<button class="btn-outline" id="servicesBtn">Our services</button>
 <button  id="signBtn"   
 class="btn-button">Sign in</button >
         </div>
@@ -54,8 +54,11 @@ class="btn-button">Sign in</button >
 </div>
 
           <div class="hero-buttons">
-  <button id="shopBtn" class="btn-main">تصفح المتجر</button>
-<button class="btn-outline" id="servicesBtn">خدماتنا</button>
+            
+<button class="btn-main" id="offersBtn">عروضات</button>
+   <button class="btn-main" id="openGallery">اقسام </button>
+    <button  class="btn-main">عملائنا</button>
+    <button class="btn-main" id="hardwareBtn">اكسسورات</button>
 </div>
  </div>
 
@@ -473,17 +476,17 @@ class="btn-button">Sign in</button >
       <!-- كرت 1 -->
      <div class="card">
   <img class="thumb_buy"
-       src="images/قياس الصحيح.png"
+       src="images/add1.jpeg"
        onclick="openFullModal(this)"
        data-product='[
          {
-           "img":"images/لابتوب.jpg",
+           "img":"images/add1.jpeg",
            "title":"Gaming Set",
            "price":"$400",
             "desc":"يارب وفقني لما تحب وترضا"
        },
          {
-           "img":"images/لابتوب2.jpg",
+           "img":"images/add1.jpeg",
            "title":"Office Set",
            "price":"$200",
             "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag "
@@ -500,17 +503,17 @@ class="btn-button">Sign in</button >
       <!-- كرت 2 -->
      <div class="card">
   <img class="thumb_buy"
-       src="images/قياس الصحيح.png"
+       src="images/add1.jpeg"
        onclick="openFullModal(this)"
        data-product='[
          {
-           "img":"images/لابتوب.jpg",
+           "img":"images/add1.jpeg",
            "title":"Gaming Set",
            "price":"$400",
             "desc":"يارب وفقني لما تحب وترضا"
        },
          {
-           "img":"images/لابتوب2.jpg",
+           "img":"images/add1.jpeg",
            "title":"Office Set",
            "price":"$200",
             "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag "
@@ -527,75 +530,20 @@ class="btn-button">Sign in</button >
       <!-- كرت 3 -->
      <div class="card">
   <img class="thumb_buy"
-       src="images/قياس الصحيح.png"
+       src="images/add1.jpeg"
        onclick="openFullModal(this)"
        data-product='[
          {
-           "img":"images/لابتوب.jpg",
+           "img":"images/add1.jpeg",
            "title":"Gaming Set",
            "price":"$400",
             "desc":"يارب وفقني لما تحب وترضا"
        },
          {
-           "img":"images/لابتوب2.jpg",
+           "img":"images/add1.jpeg",
            "title":"Office Set",
            "price":"$200",
             "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag "
-         }
-       ]'
-  />
-  <div class="card-info-buy">
-    <div class="card-name">
-      <p>Almstafid</p>
-      <h3>Almstafid Programming</h3>
-    </div>
-  </div>
-</div>
-
-      <!-- كرت 4 -->
-     <div class="card">
-  <img class="thumb_buy"
-       src="images/قياس الصحيح.png"
-       onclick="openFullModal(this)"
-       data-product='[
-         {
-           "img":"images/لابتوب.jpg",
-           "title":"Gaming Set",
-           "price":"$400",
-            "desc":"يارب وفقني لما تحب وترضا"
-       },
-         {
-           "img":"images/لابتوب2.jpg",
-           "title":"Office Set",
-           "price":"$200",
-            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  "
-         }
-       ]'
-  />
-  <div class="card-info-buy">
-    <div class="card-name">
-      <p>Almstafid</p>
-      <h3>Almstafid Programming</h3>
-    </div>
-  </div>
-</div>
-      <!-- كرت 5 -->
-     <div class="card">
-  <img class="thumb_buy"
-       src="images/قياس الصحيح.png"
-       onclick="openFullModal(this)"
-       data-product='[
-         {
-           "img":"images/لابتوب.jpg",
-           "title":"Gaming Set",
-           "price":"$400",
-            "desc":"يارب وفقني لما تحب وترضا"
-       },
-         {
-           "img":"images/لابتوب2.jpg",
-           "title":"Office Set",
-           "price":"$200",
-            "desc":"Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  Laptop Core i5 8th Gen, 8GB RAM, 256GB SSD, 15.5 Screen + Mouse + Bag  "
          }
        ]'
   />
@@ -841,7 +789,7 @@ class="btn-button">Sign in</button >
 <br>✔ لابتوبات وأجهزة كمبيوتر  <br>✔ طابعات وباركود  <br>✔ كاميرات مراقبة  <br>✔ شاشات وإكسسوارات  <br>✔ كاش دراور وأنظمة نقاط بيع  <br>✔ أجهزة مناسبة للمحلات والشركات<br>
       </p>
     </div>
-    <img src="images/add1.jpeg" onclick="goToSection('store')">
+    <img src="images/add4.jpeg" onclick="goToSection('store')">
   </div>
 
 
@@ -853,8 +801,63 @@ class="btn-button">Sign in</button >
 </div>
   </div>
 </div>
+<!--================= Sections Modal للاقسام ====================================-->
+<div id="galleryModal" class="gallery-modal">
+
+  <span class="gallery-close">&times;</span>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-card">
+      <img src="images/super.jpeg">
+      <h2>سوبر ماركت</h2>
+    </div>
+
+    <div class="gallery-card">
+      <img src="images/cofe.jpeg">
+      <h2>محامص</h2>
+    </div>
+
+   <div class="gallery-card">
+      <img src="images/1$.jpeg">
+      <h2>أدوات منزلية</h2>
+    </div>
+
+   <div class="gallery-card">
+      <img src="images/ice.jpeg">
+      <h2>مثلجات</h2>
+    </div>
 
 
+   <div class="gallery-card">
+      <img src="images/minimarket.jpeg">
+      <h2>ميني ماركت</h2>
+    </div>
+
+
+   <div class="gallery-card">
+      <img src="images/rest.jpeg">
+      <h2>مطاعم</h2>
+    </div>
+
+   <div class="gallery-card">
+      <img src="images/sweet.jpeg">
+      <h2>حلويات</h2>
+    </div>
+
+ <div class="gallery-card">
+      <img src="images/gim.jpeg">
+      <h2>نادي رياضي</h2>
+    </div>
+
+     <div class="gallery-card">
+      <img src="images/car.jpeg">
+      <h2>دواليب سيارات</h2>
+    </div>
+
+  </div>
+
+</div>
 <!--================= Programming Education  ====================================-->
 
 <div class="section-light">
