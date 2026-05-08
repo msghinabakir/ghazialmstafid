@@ -1492,7 +1492,7 @@ body.modal-open {
   position: absolute;
   top: 62px;
   right: 6px;
-
+flex-direction: column;
   width: 185px;
 
   display: none !important;
