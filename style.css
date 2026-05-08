@@ -1430,14 +1430,23 @@ body.modal-open {
     overflow-x: hidden;
   }
 
-  .header {
-    flex-direction: row;
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 6px 15px;
   min-height: 70px;
-  position: relative;
-  }
+
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
 
   .logo {
      width: 55px;
