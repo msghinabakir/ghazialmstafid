@@ -298,7 +298,17 @@ window.addEventListener("click", (e) => {
     galleryModal.style.display = "none";
 
     document.body.classList.remove("modal-open");
-
   }
-
 });
+
+/*=================== رأس صفحة للتلفون=================================*/
+<script>
+
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+});
+
+</script>
