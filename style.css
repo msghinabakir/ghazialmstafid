@@ -1544,7 +1544,7 @@ flex-direction: column;
   border-radius: 14px !important;
 }
   .landing-page {
-  flex-direction: row; /* 🔥 هيدا المهم */
+     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
     border-radius: 0 0 35px 35px;
