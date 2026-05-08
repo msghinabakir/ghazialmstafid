@@ -1458,23 +1458,18 @@ body.modal-open {
   position: absolute;
   top: 78px;
   right: 12px;
-
   width: 210px;
-
   display: none;
   flex-direction: column;
+  align-items: center;   /* ضيفي هيدي */
+  text-align: center;    /* وهيدي */
   gap: 6px;
-
   padding: 14px;
-
   background: rgba(255,255,255,0.88);
   backdrop-filter: blur(16px);
-
   border-radius: 22px;
-
   box-shadow:
     0 8px 25px rgba(0,0,0,0.08);
-
   animation: menuFade 0.2s ease;
 }
 .header-links.show {
@@ -1483,12 +1478,12 @@ body.modal-open {
 
 .header-links a,
 .header-links button{
+  width: 100%;
+  text-align: center;
   padding: 12px;
   border-radius: 14px;
-
   font-size: 17px;
   font-weight: 500;
-
   transition: 0.2s;
 }
 .header-links a:hover,
