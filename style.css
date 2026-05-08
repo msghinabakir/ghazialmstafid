@@ -1431,36 +1431,57 @@ body.modal-open {
   }
 
   .header {
-   flex-direction: row;
+    flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
-  overflow-x: auto;
+  padding: 12px 15px;
+  position: relative;
   }
 
   .logo {
-    width: 65px;
+     width: 65px;
     flex-shrink: 0;
-    order: 6; /* اللوغو آخر شي */
   }
 
-  .header-links {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-       gap: 10px;
-   width: auto;
-  align-items: center;
-  }
- 
-  .header-links a,
-  .header-links button {
-        font-size: 14px;
-    padding: 8px 14px;
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
+
+/* زر ☰ */
+.menu-toggle {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  color: #222;
+}
+
+/* القائمة */
+.header-links {
+  position: absolute;
+  top: 100%;
+  right: 15px;
+  background: white;
+  width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+  display: none;
+  flex-direction: column;
+  padding: 15px;
+  gap: 12px;
+}
+
+/* لما تنفتح */
+.header-links.show {
+  display: flex;
+}
+
+.header-links a,
+.header-links button {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
   .landing-page {
     flex-direction: column;
