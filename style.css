@@ -126,10 +126,9 @@ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
 
 .header-links a,
 .header-links button {
- width: 100%;
   text-align: center;
   color: #222;
-  padding: 10px 20px;
+ padding: 10px 18px;
   text-decoration: none;
   border-radius: 30px;
   background: transparent;
@@ -139,7 +138,9 @@ background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   cursor: pointer;
   transition: 0.3s;
   font-weight: 600;
+    white-space: nowrap;
 }
+
 /* hover لكل الأزرار */
 .header-links a:hover,
 .btn-outline:hover {
@@ -1437,17 +1438,16 @@ body.modal-open {
   }
 
   .logo {
-    width: 38px;
+    width: 65px;
   }
 
-  .header-links {
-  display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-      grid-template-columns: repeat(2, 1fr);
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  }
+}
   .header-links a,
   .header-links button {
     font-size: 15px;
