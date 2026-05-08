@@ -1431,30 +1431,36 @@ body.modal-open {
   }
 
   .header {
-     padding: 12px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     gap: 10px;
+    overflow-x: auto;
   }
 
   .logo {
-    width: 75px;
-    margin: auto;
+    width: 65px;
+    flex-shrink: 0;
+    order: 6; /* اللوغو آخر شي */
   }
 
   .header-links {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 8px;
-    width: 100%;
+       gap: 10px;
+   width: auto;
   align-items: center;
   }
-
+ 
   .header-links a,
   .header-links button {
-    font-size: 15px;
+        font-size: 14px;
     padding: 8px 14px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
-
   .landing-page {
     flex-direction: column;
     text-align: center;
