@@ -1568,14 +1568,11 @@ flex-direction: column;
 }
   .hero-list{
   list-style: none;
-
   margin: 18px 0 0;
   padding: 0;
-
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   align-items: center;
   text-align: center;
 }
@@ -1584,14 +1581,10 @@ flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 10px;
-
   font-size: 17px;
   font-weight: 500;
-
   line-height: 1.7;
-
   color: #555;
 }
   .hero-buttons {
@@ -1646,10 +1639,6 @@ hero-buttons::-webkit-scrollbar{
   .card {
     width: 100%;
   }
-.card-name h3{
-  font-size: 18px;
-}
-
 .price-acc{
   font-size: 28px;
 }
@@ -1696,6 +1685,51 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+/* تنعيم الخط */
+.landing-page h1{
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.hero-list li{
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+.card-name h3{
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+  margin: 4px 0;
+    font-size: 18px;
+}
+
+/* تعديل الهيدر تبع العروضات */
+.salse-header{
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.salse-container span{
+  display: block;
+  text-align: right;
+  margin-bottom: 8px;
+}
+.salse-header h2{
+  margin: 0;
+  text-align: right;
+  font-size: 26px;
+}
+/* زر عرض المزيد */
+#viewAllBtn{
+  width: auto;
+  min-width: 115px;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 18px;
 }
 @keyframes menuFade {
   from {
