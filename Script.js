@@ -14,24 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
  }
 });
 
-/* ================= CONTACT1 ================= 
-
-const contactModal = document.getElementById("contactModal");
-const contactBtn = document.getElementById("contactBtn");
-const closeContact = document.querySelector("#contactModal .close");
-
-contactBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  contactModal.style.display = "block";
-  document.body.style.overflow = "hidden";
-});
-
-closeContact.addEventListener("click", () => {
-  contactModal.style.display = "none";
-  document.body.style.overflow = "auto";
-});
-*/
-
 /* ================= SIGN IN ================= */
 
 const signBtn = document.getElementById("signBtn");
@@ -183,7 +165,7 @@ function closeFullModal() {
   document.getElementById("fullModal").style.display = "none";
   document.body.classList.remove("modal-open");
 }
-/*=====================    view all     ===========================*/
+/*===================== view all ===========================*/
 /*===================== view all ===========================*/
 
 const viewBtn = document.getElementById("viewAllBtn");
