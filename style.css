@@ -293,10 +293,6 @@ overflow: hidden;
 }
 
 /*==========================================*/
-
-
-
-
 .logo {
 width: 95px;
 }
@@ -305,7 +301,6 @@ width: 95px;
   color: white;
 border-radius: 15px;
  padding: 5px 15px;
-
 border: none;
 }
 
@@ -321,7 +316,7 @@ border: none;
 font-size: 14px;
 font-weight: 500;
    }
-   
+  
 .header-links a {
   color: #222;
 padding: 5px 15px;
@@ -362,6 +357,20 @@ gap: 20px;
 }
 * {
   box-sizing: border-box;
+}
+/* بالبداية خبّي كل الكروت */
+.salse-cards .card{
+  display: none;
+}
+
+/* بس أول كرت يظهر */
+.salse-cards .card:first-child{
+  display: block;
+}
+
+/* لما ينضاف class show-all */
+.salse-cards.show-all .card{
+  display: block;
 }
 .card{
    width: 100%;
@@ -1635,10 +1644,17 @@ hero-buttons::-webkit-scrollbar{
   .card {
     width: 100%;
   }
+.card-name h3{
+  font-size: 18px;
+}
 
-  .thumb_buy {
-    height: 240px;
-  }
+.price-acc{
+  font-size: 28px;
+}
+
+.thumb_buy{
+  height: 220px;
+}
 
   .service-item {
     flex-direction: column;
