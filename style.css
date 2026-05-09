@@ -1665,7 +1665,7 @@ hero-buttons::-webkit-scrollbar{
   border: none;
   width: 90px;
   height: 48px;
-  border-radius: 16px;
+  border-radius: 50px;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
