@@ -1754,13 +1754,13 @@ img {
   display: block;
   text-align: right;
   margin-bottom: 5px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .salse-header h2{
   margin: 0;
   text-align: right;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -1769,9 +1769,9 @@ img {
 #viewAllBtn{
   width: fit-content !important;
   min-width: auto !important;
-  padding: 10px 18px;
-  font-size: 14px;
-  border-radius: 18px;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 16px;
   white-space: nowrap;
   flex-shrink: 0;
 }
