@@ -1430,7 +1430,7 @@ color: #3a6ff7;
   flex-direction: row; /* 🔥 هيدا المهم */
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 6px 14px;
   min-height: 70px;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px);
@@ -1438,7 +1438,7 @@ color: #3a6ff7;
 }
 
   .logo {
-     width: 55px;
+     width: 42px;
     flex-shrink: 0;
   }
 
@@ -1453,7 +1453,7 @@ color: #3a6ff7;
 /* القائمة */
 .header-links{
   position: absolute;
-  top: 62px;
+  top: 55px;
   right: 6px;
 flex-direction: column;
   width: 185px;
