@@ -1785,8 +1785,8 @@ img {
 
 /* زر عرض المزيد */
 #viewAllBtn{
-  width: 120px; /* 🔥 حجم ثابت */
-  height: 52px;
+  width: 95px; /* 🔥 حجم ثابت */
+  height: 40px;
 
   display: flex;
   align-items: center;
