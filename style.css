@@ -152,14 +152,24 @@ font-weight: 700;
 }
 
 /* Sign in ثابت أزرق */
-.btn-button {
-  background: linear-gradient(to right, #4F8DFD, #3B6FEA) !important;
-  color: white !important;
-  border-radius: 30px;
-    font-weight: 600;
+.btn-button{
+  min-width: 110px;
+  height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(to right,  #5a8cff, #3f6df5 );
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: 0.3s;
-    border: none;
+  transition: .3s;
+}
+.btn-button:hover{
+  transform: scale(1.03);
 }
 .btn-outline:hover {
   background: linear-gradient(to right, #4F8DFD, #3B6FEA);
@@ -323,13 +333,12 @@ padding: 5px 15px;
 text-decoration: none;
 border-radius: 15px;
 }
-
 .salse-header{
   display: flex;
-    justify-content: space-between;
-      align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
-
 .salse-container {
   width: 100%;
   max-width: 1200px; /* أو 1300 */
@@ -1492,13 +1501,13 @@ flex-direction: column;
   flex-direction: row; /* 🔥 هيدا المهم */
   border-radius: 12px;
 }
-.btn-button{
-  width: 100%;
-  margin-top: 6px;
-  padding: 10px !important;
-  border-radius: 14px !important;
-}
-
+  .btn-button{
+    min-width: 90px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 14px;
+    padding: 0 18px;
+  }
 .landing-page {
   display: flex;
   flex-direction: column-reverse;
@@ -1743,14 +1752,9 @@ img {
   font-size: 12px;
 }
 /* الهيدر تبع القسم */
-.salse-header h2{
-  margin: 0;
-  text-align: right;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
+  .salse-header h3{
+    font-size: 20px;
+  }
 /* زر عرض المزيد */
 #viewAllBtn{
   min-width: 75px;
