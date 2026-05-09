@@ -1659,7 +1659,7 @@ flex-direction: column;
   }
   /* السعر */
 .price-acc{
-  font-size: 80px;
+  font-size: 50px !important;
   font-weight: 800;
     border-radius: 22px;
   padding-top: 0;
