@@ -184,6 +184,8 @@ function closeFullModal() {
   document.body.classList.remove("modal-open");
 }
 /*=====================    view all     ===========================*/
+/*===================== view all ===========================*/
+
 const viewBtn = document.getElementById("viewAllBtn");
 const cardsContainer = document.querySelector(".salse-cards");
 
@@ -195,13 +197,15 @@ if (viewBtn && cardsContainer) {
 
     if(cardsContainer.classList.contains("show-all")){
 
-      viewBtn.textContent = "Show Less";
+      viewBtn.textContent = "إغلاق";
 
     } else {
 
-      viewBtn.textContent = "View All";
+      viewBtn.textContent = "المزيد";
     }
+
   });
+
 }
 /*=====================    خدماتنا    ===========================*/
 
