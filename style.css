@@ -1740,27 +1740,38 @@ img {
   direction: rtl;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.salse-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .salse-container span{
   display: block;
   text-align: right;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
+  font-size: 13px;
 }
+
 .salse-header h2{
   margin: 0;
   text-align: right;
-  font-size: 26px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
 }
+
 /* زر عرض المزيد */
 #viewAllBtn{
-  width: auto;
-  min-width: 115px;
-  padding: 8px 18px;
-  font-size: 14px;
+  min-width: 120px;
+  padding: 10px 22px;
   border-radius: 18px;
+  font-size: 15px;
+  flex-shrink: 0;
 }
 @keyframes menuFade {
   from {
