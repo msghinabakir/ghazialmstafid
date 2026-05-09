@@ -128,7 +128,8 @@ document.getElementById("hardwareBtn").addEventListener("click", function () {
 });
 /*=====================    modal     ===========================*/
 function openFullModal(el) {
-  document.getElementById("fullModal").style.display = "block";
+
+  document.getElementById("fullModal").style.display = "flex";
 
   const data = JSON.parse(el.dataset.product);
 
@@ -138,21 +139,45 @@ function openFullModal(el) {
   thumbsContainer.innerHTML = "";
 
   data.forEach((item, index) => {
+
     const img = document.createElement("img");
     img.src = item.img;
 
     img.onclick = () => {
+
       mainImage.src = item.img;
 
       document.getElementById("productTitle").innerHTML =
-  item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
-     document.getElementById("productDesc").innerHTML = item.desc;
+        item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
+
+      document.getElementById("productDesc").innerHTML = item.desc;
+
       document.getElementById("productPrice").innerText = item.price;
 
       document.getElementById("whatsappBtn").href =
         "https://wa.me/96181390018?text=مرحبا بدي استفسر عن " + item.title;
     };
 
+    thumbsContainer.appendChild(img);
+
+    if (index === 0) {
+
+      mainImage.src = item.img;
+
+      document.getElementById("productTitle").innerHTML =
+        item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
+
+      document.getElementById("productDesc").innerHTML = item.desc;
+
+      document.getElementById("productPrice").innerText = item.price;
+
+      document.getElementById("whatsappBtn").href =
+        "https://wa.me/96181390018?text=مرحبا بدي استفسر عن " + item.title;
+    }
+
+  });
+
+}
     thumbsContainer.appendChild(img);
 
     // أول صورة افتراضية
