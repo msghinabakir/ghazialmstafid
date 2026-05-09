@@ -1731,10 +1731,14 @@ img {
 /* تعديل الهيدر تبع العروضات */
 .salse-header{
   direction: rtl;
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  background: #f8fafc;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* 🔥 أهم تعديل */
-  padding: 0 14px;
+  align-items: center;
+  padding: 10px 14px;
   margin-bottom: 18px;
   width: 100%;
 }
