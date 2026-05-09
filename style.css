@@ -1623,7 +1623,7 @@ flex-direction: column;
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 12px;
-       padding: 0 25px 8px;
+       padding: 0 2px 8px;
     margin-top: 22px;
  justify-content: flex-start;
     scrollbar-width: none;
