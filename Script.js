@@ -178,22 +178,6 @@ function openFullModal(el) {
   });
 
 }
-    thumbsContainer.appendChild(img);
-
-    // أول صورة افتراضية
-    if (index === 0) {
-      mainImage.src = item.img;
-
-document.getElementById("productTitle").innerHTML =
-  item.title + "<br><span class='sub-title'>" + (item.subtitle || "") + "</span>";
-       document.getElementById("productDesc").innerHTML = item.desc;
-      document.getElementById("productPrice").innerText = item.price;
-
-      document.getElementById("whatsappBtn").href =
-        "https://wa.me/96181390018?text=مرحبا بدي استفسر عن " + item.title;
-    }
-  });
-}
 
 function closeFullModal() {
   document.getElementById("fullModal").style.display = "none";
