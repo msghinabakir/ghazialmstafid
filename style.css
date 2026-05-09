@@ -1549,14 +1549,14 @@ flex-direction: column;
   border-radius: 0 0 35px 35px;
 }
     .hero-title{
-    font-size: 15px; /* لكل احتياجاتك التقنية */
+    font-size: 13px; /* لكل احتياجاتك التقنية */
     font-weight: 700;
         text-align: center;
     line-height: 1.3;
   }
 
   .hero-title .blue{
-    font-size: 40px; /* منصة متكاملة */
+    font-size: 30px; /* منصة متكاملة */
     font-weight: 800;
     color: #3b82f6;
     display: block;
@@ -1566,7 +1566,7 @@ flex-direction: column;
   .hero-desc{
   margin-top: 15px;
   margin-bottom: 10px;/* نص لتحت */
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   color: #555;
 }
@@ -1612,7 +1612,7 @@ flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  font-size: 11px;/* قائمة لتحت */
+  font-size: 10px;/* قائمة لتحت */
   font-weight: 500;
   line-height: 1.5;
   color: #666;
