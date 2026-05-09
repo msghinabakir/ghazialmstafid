@@ -570,7 +570,7 @@ transition: 0.4s;
 .price-acc{
   font-size: 60px !important;
   font-weight: 800;
-  background: linear-gradient(to right,#4F8DFD,#3B6FEA);
+  background: #22c55e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -1663,6 +1663,7 @@ flex-direction: column;
   font-weight: 800;
     border-radius: 22px;
   padding-top: 0;
+  color: #22c55e;
 }
   /* الصورة */
 .thumb_buy{
