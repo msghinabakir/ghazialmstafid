@@ -1549,7 +1549,7 @@ flex-direction: column;
   border-radius: 0 0 35px 35px;
 }
     .hero-title{
-    font-size: 13px; /* لكل احتياجاتك التقنية */
+    font-size: 10px; /* لكل احتياجاتك التقنية */
     font-weight: 700;
         text-align: center;
     line-height: 1.3;
@@ -1566,7 +1566,7 @@ flex-direction: column;
   .hero-desc{
   margin-top: 15px;
   margin-bottom: 10px;/* نص لتحت */
-  font-size: 10px;
+  font-size: 8px;
   font-weight: 600;
   color: #555;
 }
@@ -1612,7 +1612,7 @@ flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  font-size: 10px;/* قائمة لتحت */
+  font-size: 8px;/* قائمة لتحت */
   font-weight: 500;
   line-height: 1.5;
   color: #666;
@@ -1622,10 +1622,10 @@ flex-direction: column;
       display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 10px;
-      padding-bottom: 5px;
-    margin-top: 18px;
-    justify-content: center;
+    gap: 12px;
+       padding: 0 30px 8px;
+    margin-top: 22px;
+ justify-content: flex-start;
     scrollbar-width: none;
   }
 hero-buttons::-webkit-scrollbar{
