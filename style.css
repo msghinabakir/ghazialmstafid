@@ -1758,14 +1758,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 0 12px; /* 🔥 يبعد عن الحواف */
-
-  margin-bottom: 18px; /* 🔥 ينزل الزر عن الصورة */
-
+  padding: 0 12px;
+  margin-bottom: 25px;
   gap: 12px;
+  width: 100%;
 }
-
 .salse-title{
   display: flex;
   flex-direction: column;
@@ -1790,21 +1787,18 @@ img {
 
 /* زر عرض المزيد */
 #viewAllBtn{
-  width: 75px; /* 🔥 حجم ثابت */
+  width: 75px;
   height: 34px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-margin-bottom: 8px; /* 🔥 يبعد عن الصورة */
   padding: 0;
   font-size: 13px;
   font-weight: 600;
-
   border-radius: 14px;
-
   white-space: nowrap;
   flex-shrink: 0;
+  margin-top: 8px;
 }
 @keyframes menuFade {
   from {
