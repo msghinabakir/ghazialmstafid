@@ -1542,7 +1542,7 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.35;
   margin: 0;
   font-weight: 800;
@@ -1553,8 +1553,6 @@ flex-direction: column;
   font-size: 30px;
   margin: 0;
 }
-
-
 .landing-page span{
   font-size: 15px;
 }
@@ -1574,7 +1572,7 @@ flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  font-size: 5px;/* قائمة لتحت */
+  font-size: 12px !important;  /* قائمة لتحت */
   font-weight: 500;
   line-height: 1.5;
   color: #666;
