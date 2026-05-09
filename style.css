@@ -95,6 +95,7 @@ font-weight: 700;
 
   margin-top: 28px;
 }
+
 .btn-main{
   background: linear-gradient(135deg,#4F8DFD,#3B6FEA);
   color: white;
@@ -120,6 +121,7 @@ font-weight: 700;
   left: 0;
   transition: 0.4s;
 }
+
 .btn-main:hover::after {
   width: 100%;
 }
@@ -141,12 +143,14 @@ font-weight: 700;
   font-weight: 600;
     white-space: nowrap;
 }
+
 /* hover لكل الأزرار */
 .header-links a:hover,
 .btn-outline:hover {
   background: linear-gradient(to right, #4F8DFD, #3B6FEA);
   color: white;
 }
+
 /* Sign in ثابت أزرق */
 .btn-button {
   background: linear-gradient(to right, #4F8DFD, #3B6FEA) !important;
@@ -184,6 +188,7 @@ font-weight: 700;
     transform: translateX(0);
   }
 }
+
 @keyframes fadeRight {
   from {
     opacity: 0;
@@ -194,6 +199,7 @@ font-weight: 700;
     transform: translateX(0);
   }
 }
+
 .landing-page {
     gap: 40px; /* 🔥 مهم */
     max-width: 1200px;
@@ -211,6 +217,7 @@ overflow: hidden;
 }
 .landing-page::before{
   content: "";
+
   position: absolute;
   width: 300px;
   height: 300px;
@@ -318,24 +325,16 @@ border-radius: 15px;
 }
 
 .salse-header{
-  direction: rtl;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 28px;
-  padding: 0 10px;
+    justify-content: space-between;
+      align-items: center;
 }
-.salse-container{
+
+.salse-container {
   width: 100%;
-  max-width: 1200px;
-  margin: 35px auto;
-  padding: 35px 20px;
-  background: #f8f8f8;
-  border-radius: 40px;
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.04);
-  position: relative;
-  overflow: hidden;
+  max-width: 1200px; /* أو 1300 */
+ margin: auto;
+   padding: 40px 20px; 
 }
 .salse-container span{
 background: linear-gradient(to right, #4F8DFD, #3B6FEA);
@@ -363,22 +362,25 @@ gap: 20px;
 .salse-cards .card{
   display: none;
 }
+
 /* بس أول كرت يظهر */
 .salse-cards .card:first-child{
   display: block;
 }
+
 /* لما ينضاف class show-all */
 .salse-cards.show-all .card{
   display: block;
 }
 .card{
-  width: 100%;
-  background: white;
-  border-radius: 32px;
-  overflow: hidden;
-  box-shadow:
-    0 8px 25px rgba(0,0,0,0.06);
-  transition: .3s;
+   width: 100%;
+     background-color: #fff;
+  color: #222;
+  border: 1px solid #edf2f7;
+  border-radius: 30px;
+  overflow: hidden;  
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: 0.35s;     
 }
 .card:hover {
 transform: translateY(-8px) ;
@@ -444,12 +446,15 @@ transform: translateY(-8px) ;
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(225,106,0,0.4);
 }
-.thumb_buy{
+
+.thumb_buy {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 28px 28px 0 0;
+  height: 320px;        /* 🔥 حجم ثابت */
+  object-fit: cover;    /* يقص بشكل مرتب */
+  border-radius: 20px 20px 0 0;
+  display: block;
 }
+
 .card-info-buy {
   display: flex;
   flex-direction: column;
@@ -485,9 +490,8 @@ transform: translateY(-8px) ;
   z-index: 9999;
   display: none;
   overflow-y: auto;
-  justify-content: center;
-  align-items: flex-start;
 }
+
 .full-content {
   display: flex;
   gap: 40px;
@@ -497,6 +501,7 @@ transform: translateY(-8px) ;
   width: 60%;
   min-height: auto;
 }
+
 /*جهة اليسار*/
 .left-side {
   width: 60%;
@@ -528,6 +533,7 @@ transition: 0.4s;
   gap: 10px;
   margin-top: 15px;
 }
+
 .thumbs img {
   width: 80px;
   height: 80px;
@@ -550,6 +556,7 @@ transition: 0.4s;
   gap: 10px;
   margin-top: 10px;
 }
+
 /* السعر */
 .price-acc{
   font-size: 42px;
@@ -572,6 +579,7 @@ transition: 0.4s;
 .desc {
   color: #555;
 }
+
 .whatsapp-btn {
   display: inline-block;
   margin-top: 20px;
@@ -606,6 +614,7 @@ background-clip: text; /* 🔥 أضف هيدا */
   font-size: 20px;
   font-weight: bold;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -713,6 +722,7 @@ background-clip: text; /* 🔥 أضف هيدا */
 .modal-content form {
   transform: translateX(-10px);
 }
+
 .btn_content {
     display: inline-flex; /* 🔥 مهم ليصيروا جنب بعض */
   align-items: center;
@@ -784,8 +794,10 @@ backdrop-filter: blur(5px);
 .button-modal.show {
     display: flex;
 }
+
 /* محتوى النافذة */
 .button-modal-content {
+
     backdrop-filter: blur(15px);
     border: 1px solid rgba(110, 168, 255, 0.15);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
@@ -822,11 +834,13 @@ background: #fffaf5;
     color: #6ea8ff;
     transform: rotate(90deg) scale(1.2);
 }
+
 .input-group {
   position: relative;
   width: 100%;
   margin-bottom: 15px;
 }
+
 .input-group input {
   width: 100%;
   padding: 14px 14px 14px 45px; /* مساحة للأيقونة */
@@ -994,6 +1008,7 @@ color: #3a6ff7;
   align-items: center;
   justify-content: center;
 }
+
 /* ==================================================================================================*/
 /* CONACT*/
 .contact-modal {
@@ -1123,58 +1138,74 @@ color: #3a6ff7;
 .whatsapp .left i {
   background: #25D366;
 }
+
 .facebook .left i {
   background: #1877F2;
 }
+
 .messenger .left i {
   background: linear-gradient(45deg, #0084FF, #00C6FF);
 }
+
 .instagram .left i {
   background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
 }
+
 .tiktok .left i {
   background: black;
 }
+
 .youtube .left i {
   background: #FF0000;
 }
+
 /*======================================================================*/
 .services {
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
 }
+
 .services h1 {
   font-size: 32px;
   margin-bottom: 10px;
 }
+
 .services-desc {
   color: #666;
   margin-bottom: 30px;
 }
+
 /* كل خدمة */
 .service-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+
   margin-bottom: 50px;
   padding-bottom: 25px;
+
   border-bottom: 1px solid #eee;
+
   transition: 0.3s;
 }
+
 /* النص */
 .service-item .text {
   flex: 1;
 }
+
 .service-item h2 {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
 .service-item p {
   color: #666;
   font-size: 15px;
 }
+
 .service-item:hover {
   transform: translateY(-5px);
 }
@@ -1186,38 +1217,49 @@ color: #3a6ff7;
   border-radius: 15px;
   transition: 0.3s;
 }
+
 .service-item:hover img {
   transform: scale(1.05);
 }
 /*===================================================================*/
+
 body.modal-open {
   overflow: hidden;
 }
+
 /*======================= course-item ===================================*/
+/* ========================================= */
 /* COURSE SECTION */
+/* ========================================= */
+
 #courseTitle {
   text-align: center;
   margin-bottom: 30px;
   color: var(--text-color);
   font-size: 28px;
 }
+
 .arrow {
   font-size: 22px;
   color: var(--main-color);
 }
+
 .course-text {
   flex: 1;
 }
+
 .course-text h3 {
   margin: 0;
   font-size: 20px;
   color: #111;
 }
+
 .course-text p {
   margin-top: 5px;
   color: #666;
   font-size: 14px;
 }
+
 .course-item {
   display: flex;
   align-items: center;
@@ -1229,17 +1271,21 @@ body.modal-open {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .course-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
+
 .course-item img {
   width: 120px;
   border-radius: 10px;
 }
+
 /* ========================================= */
 /* ROOT */
 /* ========================================= */
+
 :root {
   --main-color: #2563eb;
   --bg-color: #f8fafc;
@@ -1247,9 +1293,11 @@ body.modal-open {
   --text-color: #1e293b;
   --sub-text: #64748b;
 }
+
 /* ========================================= */
 /* COURSE MODAL */
 /* ========================================= */
+
 .course-modal {
   display: none;
   position: fixed;
@@ -1260,6 +1308,7 @@ body.modal-open {
   align-items: center;
   z-index: 9999;
 }
+
 .course-content {
   background: #fff;
   padding: 40px;
@@ -1289,12 +1338,14 @@ color: #3a6ff7;
   align-items: center;
   justify-content: center;
 }
+
 .close-full:hover {
    transform: rotate(90deg) scale(1.1);
   opacity: 1;
   transform: rotate(90deg);
   color: #4facfe;
 }
+
 /* ========================================= */
 /* GALLERY */
 /* ========================================= */
@@ -1307,6 +1358,7 @@ color: #3a6ff7;
   overflow-y: auto;
   z-index: 9999;
 }
+
 .gallery-grid {
   width: 100%;
   min-height: 100vh;
@@ -1316,6 +1368,7 @@ color: #3a6ff7;
   grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
   gap: 25px;
 }
+
 .gallery-card {
   background: #fff;
   border-radius: 18px;
@@ -1323,15 +1376,18 @@ color: #3a6ff7;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
+
 .gallery-card:hover {
   transform: translateY(-5px);
 }
+
 .gallery-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
+
 .gallery-card h2 {
   margin: 0;
   padding: 15px;
@@ -1339,6 +1395,7 @@ color: #3a6ff7;
   font-size: 20px;
   color: #111;
 }
+
 .gallery-close {
   position: fixed;
   top: 15px;
@@ -1349,38 +1406,12 @@ color: #3a6ff7;
   z-index: 10000;
   transition: 0.3s;
 }
+
 .gallery-close:hover {
   transform: rotate(90deg);
   color: #4facfe;
-/* ========================================= */
-#viewAllBtn{
-  min-width: 135px;
-  height: 56px;
-
-  border: none;
-  border-radius: 22px;
-
-  background: linear-gradient(
-    to right,
-    #4F8DFD,
-    #3B6FEA
-  );
-
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  transition: .3s;
 }
 
-#viewAllBtn:hover{
-  transform: scale(1.04);
-}
 /* ========================================= */
 /* MOBILE FIX */
 /* ========================================= */
@@ -1399,16 +1430,18 @@ color: #3a6ff7;
   flex-direction: row; /* 🔥 هيدا المهم */
   justify-content: space-between;
   align-items: center;
-  padding: 4px 12px;
-  min-height: 58px;
+  padding: 10px 15px;
+  min-height: 70px;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 12px rgba(0,0,0,0.04);
 }
+
   .logo {
-     width: 58px;
+     width: 55px;
     flex-shrink: 0;
   }
+
 /* زر ☰ */
 .menu-toggle {
   font-size: 30px;
@@ -1416,12 +1449,13 @@ color: #3a6ff7;
   display: block;
   color: #222;
 }
+
 /* القائمة */
 .header-links{
   position: absolute;
-  top: 55px;
+  top: 62px;
   right: 6px;
-  flex-direction: column;
+flex-direction: column;
   width: 185px;
   display: none !important;
   align-items: center;
@@ -1435,25 +1469,10 @@ color: #3a6ff7;
   z-index: 999;
   animation: menuFade .25s ease;
 }
-  /* زر عرض المزيد */
-#viewAllBtn{
-  min-width: 110px;
-  height: 46px;
-  font-size: 15px;
-  border-radius: 18px;
-  border: none;
-  background: linear-gradient(to right,#4F8DFD,#3B6FEA);
-  color: white;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-}
 .header-links.show {
   display: flex !important;
 }
+
 .header-links button{
   width: 100%;
   text-align: center;
@@ -1497,6 +1516,7 @@ color: #3a6ff7;
         text-align: center;
     line-height: 1.3;
   }
+
   .hero-title .blue{
     font-size: 30px; /* منصة متكاملة */
     font-weight: 800;
@@ -1528,6 +1548,7 @@ color: #3a6ff7;
   font-weight: 800;
   color: #111827;
 }
+
 .highlight{
   font-size: 30px;
   margin: 0;
@@ -1545,6 +1566,7 @@ color: #3a6ff7;
   align-items: flex-end;
   text-align: right;
 }
+
 .hero-list li{
   display: flex;
   align-items: center;
@@ -1580,6 +1602,7 @@ color: #3a6ff7;
     max-width: 100%;
     border-radius: 25px;
   }
+
 .landing-page-Search {
   display: flex;
   align-items: center;
@@ -1590,10 +1613,12 @@ color: #3a6ff7;
   max-width: 380px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
+
   .landing-page-Search input {
     width: 100%;
     font-size: 16px;
   }
+
  .landing-page-Search button {
   background: linear-gradient(135deg, #4F8DFD, #3B6FEA);
   color: white;
@@ -1610,35 +1635,29 @@ color: #3a6ff7;
   justify-content: center;
   box-shadow: 0 8px 20px rgba(59,111,234,0.25);
 }
+
   .salse-container {
-   margin: 25px 12px;
-  padding: 25px 15px;
-  border-radius: 35px;
+    padding: 30px 8px;
   }
-.card-info-buy{
-    padding: 10px;
-  }
+
   .salse-cards {
     grid-template-columns: 1fr;
-    gap: 14px;
   }
 
   .card {
     width: 100%;
-    padding-top: 0px;
-      border-radius: 22px;
+    padding-top: 10px;
   }
   /* السعر */
 .price-acc{
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 800;
     border-radius: 22px;
   padding-top: 0;
-  margin-top: 5px;
 }
   /* الصورة */
 .thumb_buy{
-  height: 145px;
+  height: 180px;
   border-radius: 22px 22px 0 0;
 }
   .service-item {
@@ -1662,10 +1681,7 @@ color: #3a6ff7;
   }
 
   .main-img {
-     width: 100%;
-    height: 240px;
-    object-fit: contain;
-    padding: 15px;
+    height: auto;
   }
 
   .course-item {
@@ -1700,7 +1716,7 @@ img {
   line-height: 1.3;
   letter-spacing: -0.4px;
   margin: 2px 0;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* تعديل الهيدر تبع العروضات */
@@ -1710,7 +1726,7 @@ img {
   justify-content: space-between;
   align-items: center; /* 🔥 أهم تعديل */
   padding: 0 14px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   width: 100%;
 }
 .salse-title{
@@ -1730,12 +1746,24 @@ img {
 .salse-header h2{
   margin: 0;
   text-align: right;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   line-height: 1.2;
 }
 
-
+/* زر عرض المزيد */
+#viewAllBtn{
+  min-width: 75px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* 🔥 كان عامل نزول */
+}
 @keyframes menuFade {
   from {
     opacity: 0;
