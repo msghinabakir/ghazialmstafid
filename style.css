@@ -1757,7 +1757,12 @@ img {
   direction: rtl;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+
+  padding: 0 12px; /* 🔥 يبعد عن الحواف */
+
+  margin-bottom: 18px; /* 🔥 ينزل الزر عن الصورة */
+
   gap: 12px;
 }
 
@@ -1791,7 +1796,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
+margin-bottom: 8px; /* 🔥 يبعد عن الصورة */
   padding: 0;
   font-size: 13px;
   font-weight: 600;
