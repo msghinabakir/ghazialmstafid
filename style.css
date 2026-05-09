@@ -872,7 +872,7 @@ color: #3a6ff7;
 }
 .input-group input:focus {
   border-color: #4F8DFD;
-  box-shadow: 0 0 10px rgba(255,106,0,0.2);
+box-shadow: 0 0 10px rgba(79,141,253,0.25);
 }
 .input-group textarea {
   width: 100%;
