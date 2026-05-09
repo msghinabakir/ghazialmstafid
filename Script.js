@@ -175,44 +175,38 @@ function closeFullModal() {
   document.body.classList.remove("modal-open");
 }
 /*=====================    view all     ===========================*/
+const viewBtn = document.getElementById("viewAllBtn");
+const cardsContainer = document.querySelector(".salse-cards");
 
-document.querySelectorAll(".salse-container").forEach(section => {
+if (viewBtn && cardsContainer) {
 
-  const btn = section.querySelector(".btn-button");
-  const cards = section.querySelectorAll(".card");
+  viewBtn.addEventListener("click", () => {
 
-  let expanded = false;
+    cardsContainer.classList.toggle("show-all");
 
-  // أول تحميل: بس 4
-  cards.forEach((card, index) => {
-    if (index >= 4) {
-      card.classList.add("hidden");
+    if(cardsContainer.classList.contains("show-all")){
+
+      viewBtn.textContent = "Show Less";
+
+    } else {
+
+      viewBtn.textContent = "View All";
     }
   });
-
-  btn.addEventListener("click", () => {
-    expanded = !expanded;
-
-    cards.forEach((card, index) => {
-      if (index >= 4) {
-        card.classList.toggle("hidden");
-      }
-    });
-
-    btn.textContent = expanded ? "Show Less" : "View All";
-  });
-
-});
-
+}
 /*=====================    خدماتنا    ===========================*/
 
 const servicesBtn = document.getElementById("servicesBtn");
 const servicesModal = document.getElementById("servicesModal");
 
-servicesBtn.addEventListener("click", () => {
-  servicesModal.style.display = "block";
-document.body.classList.add("modal-open");
-});
+if (servicesBtn && servicesModal) {
+  servicesBtn.addEventListener("click", () => {
+    servicesModal.style.display = "block";
+    document.body.classList.add("modal-open");
+
+  });
+
+}
 
 function closeServicesModal() {
   servicesModal.style.display = "none";
@@ -305,10 +299,12 @@ window.addEventListener("click", (e) => {
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
-menuToggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  mobileMenu.classList.toggle("show");
-});
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    mobileMenu.classList.toggle("show");
+  });
+}
 
 /* يسكر إذا كبس برا المنيو */
 document.addEventListener("click", (e) => {
